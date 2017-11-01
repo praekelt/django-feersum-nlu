@@ -1,6 +1,6 @@
-Django Form Factory
-===================
-**Dynamic django form builder.**
+Django Feersum NLU
+==================
+**A django feersum nlu wrapper with helper methods and reusable views.**
 
 .. image:: https://travis-ci.org/praekelt/django-feersum-nlu.svg?branch=develop
     :target: https://travis-ci.org/praekelt/django-feersum-nlu
