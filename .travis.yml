@@ -1,0 +1,22 @@
+language: python
+
+addons:
+  apt:
+    sources:
+      - deadsnakes # source required so it finds the package definition below
+    packages:
+      - python3.6
+      - python3.4-dev
+
+env:
+  - TOXENV=django111
+  - TOXENV=django20
+
+install:
+  - pip install tox
+  - pip install coveralls
+
+script:
+  - tox
+after_success:
+  - coveralls
