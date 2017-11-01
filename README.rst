@@ -2,7 +2,7 @@ Django Feersum NLU
 ==================
 **A django feersum nlu wrapper with helper methods and reusable views.**
 
-.. image:: https://travis-ci.com/praekelt/django-feersum-nlu.svg?branch=develop
+.. image:: https://travis-ci.com/praekelt/django-feersum-nlu.svg?token=5Nj35BzFWCYFF3qyVG5B&branch=develop
     :target: https://travis-ci.com/praekelt/django-feersum-nlu
 
 .. image:: https://coveralls.io/repos/github/praekelt/django-feersum-nlu/badge.svg?branch=develop
