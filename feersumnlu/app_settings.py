@@ -3,7 +3,8 @@ from django.core.exceptions import ImproperlyConfigured
 
 FEERSUMNLU = {
     "AUTH_TOKEN": None,
-    "HOST": None
+    "HOST": None,
+    "MODEL": None
 }
 
 for key, value in FEERSUMNLU.items():

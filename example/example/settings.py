@@ -58,3 +58,9 @@ STATIC_URL = "/static/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 SECRET_KEY = "SECRET_KEY"
 EMAIL_BACKEND = "django.core.mail.backends.dummy.EmailBackend"
+
+FEERSUMNLU = {
+    "AUTH_TOKEN": "FEERSUM-NLU-431-9020-80dd-cec15695d7",
+    "HOST": "https://nlu.playground.feersum.io:443/nlu/v2",
+    "MODEL": "new faq"
+}
