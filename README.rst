@@ -11,6 +11,11 @@ Django Feersum NLU
 .. contents:: Contents
     :depth: 5
 
+Requirements
+------------
+
+#. pip install feersum_nlu
+
 Installation
 ------------
 

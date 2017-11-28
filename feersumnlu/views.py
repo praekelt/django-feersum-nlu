@@ -1,13 +1,10 @@
-from django.core.exceptions import ImproperlyConfigured
-from django.http import HttpResponseRedirect
-from django.urls import reverse
-from django.utils.encoding import force_text
-
-from feersumnlu import utils
-from feersumnlu.app_settings import FEERSUMNLU
+from feersum_nlu import FaqMatchersApi
 
 from forms import FaqForm
 from django.views.generic.edit import FormView
+
+from feersumnlu import utils
+from feersumnlu.app_settings import FEERSUMNLU
 
 
 class FaqFormView(FormView):
@@ -17,7 +14,7 @@ class FaqFormView(FormView):
 
     def form_valid(self, form):
         feersum_nlu = utils.configure_feersum_nlu()
-        faq_api = feersum_nlu.FaqMatchersApi()
+        faq_api = FaqMatchersApi()
         response = faq_api.faq_matcher_retrieve(
             instance_name=FEERSUMNLU["MODEL"],
             text_input=feersum_nlu.TextInput(text=form.cleaned_data["text"])
