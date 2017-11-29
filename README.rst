@@ -16,6 +16,10 @@ Requirements
 
 #. pip install feersum_nlu
 
+#. A feersum_nlu AUTH_TOKEN and MODEL,
+please check https://github.com/praekelt/feersum-nlu-api-wrappers for information
+
+
 Installation
 ------------
 
@@ -25,34 +29,24 @@ Installation
 
 #. Add ``url(r'^feersumnlu/', include("feersumnlu.urls", namespace="feersumnlu"))`` to your ``url patterns`` (only required if you intend on using the detail view)
 
+#. Add FEERSUMNLU settings to django app settings.
+
 Usage
 -----
 
-``django-feersum-nlu`` a django feersum nlu wrapper with helper methods and reusable views
+``django-feersum-nlu`` a django feersum nlu wrapper with helper methods and reusable views.
 
 
 Settings
 ~~~~~~~~
 
-
-
-Views
-~~~~~
-
-
-
-Templates
-~~~~~~~~~
-
-
-
-Templatetags
-~~~~~~~~~~~~
-
-
-
-Models
-~~~~~~
+The following settings are required for this module:
+::
+    FEERSUMNLU = {
+        "AUTH_TOKEN": "YOUR AUTH TOKEN",
+        "HOST": "https://nlu.playground.feersum.io:443/nlu/v2",
+        "MODEL": "YOUR MODEL"
+    }
 
 
 Licence
