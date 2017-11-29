@@ -11,7 +11,7 @@ from feersumnlu.app_settings import FEERSUMNLU
 class FaqFormView(FormView):
     template_name = "faqform.html"
     form_class = FaqForm
-    success_url = reverse_lazy("feersumnlu:faqquestion_thanks")
+    success_url = reverse_lazy("faqquestion_thanks")
 
     def form_valid(self, form):
         feersum_nlu = utils.configure_feersum_nlu()
