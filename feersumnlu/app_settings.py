@@ -11,4 +11,4 @@ for key, value in FEERSUMNLU.items():
     try:
         FEERSUMNLU[key] = settings.FEERSUMNLU[key]
     except AttributeError:
-        raise ImproperlyConfigured("The ", key, " setting must not be empty.")
+        raise ImproperlyConfigured("The %s setting must not be empty." % (key,))

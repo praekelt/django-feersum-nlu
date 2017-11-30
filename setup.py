@@ -14,7 +14,8 @@ setup(
     packages=find_packages(),
     dependency_links=[],
     install_requires=[
-        "django"
+        "django",
+        "feersum_nlu"
     ],
     classifiers=[
         "Programming Language :: Python",
