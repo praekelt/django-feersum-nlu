@@ -33,7 +33,7 @@ Installation
 
 
 Settings
-~~~~~~~~
+--------
 
 The following settings are required for this module:
 ::
